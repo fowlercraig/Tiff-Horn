@@ -1,0 +1,135 @@
+/*
+Theme Name: Gridded
+Author: WeAreGiants
+Version: 1
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: black, blue, white, light, one-column, fluid-layout, responsive-layout, custom-menu, featured-images, microformats, sticky-post, threaded-comments, translation-ready
+Text Domain: gridded
+
+*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{font-size:100%;font:inherit;padding:0;border:0;margin:0;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}.clear{clear:both}
+.sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}
+
+/*
+*
+* Lemonade v1.1
+* Copyright 2013, Joe Richardson
+* lemonade.im
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+*
+*/
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box
+}
+
+.box {
+  text-align: center;
+  font-family: "futura-pt",sans-serif;
+  background:#fff;
+  color: #ccc;
+  font-size:11px;
+  padding: 10px 0 10px 0;
+  border-radius:4px;
+}
+
+/* Set the width of the grid */
+.frame {
+  width: 100%;
+  margin: 0px auto
+}
+
+/* Attribute selector */
+[class*='bit-'] {
+  float: left;
+  padding: 0.3em
+}
+
+/* Floats last ".bit-" to the right */
+[class*='bit-']:last-of-type {
+  float: left
+}
+
+/* Clearfix */
+.frame:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+/* Main Widths */
+.bit-1  { width: 100% }
+.bit-2  { width: 50% }
+.bit-3  { width: 33.33% }
+.bit-4  { width: 25% }
+.bit-5  { width: 20% }
+.bit-6  { width: 16.6666666667% }
+.bit-7  { width: 14.2857142857% }
+.bit-8  { width: 12.5% }
+.bit-9  { width: 11.1111111111% }
+.bit-10 { width: 10% }
+.bit-11 { width: 9.09090909091% }
+.bit-12 { width: 8.33% }
+
+/* Landscape mobile & down */
+@media (max-width: 30em) {
+  .bit-1,
+  .bit-2,
+  .bit-3,
+  .bit-4,
+  .bit-5,
+  .bit-6,
+  .bit-7,
+  .bit-8,
+  .bit-9,
+  .bit-10,
+  .bit-11,
+  .bit-12 {
+    width: 100%;
+  }
+}
+
+/* Portrait tablet to landscape */
+@media (min-width: 30em) and (max-width: 50em) {
+  .bit-4,
+  .bit-6,
+  .bit-8,
+  .bit-10,
+  .bit-12 {
+    width: 50%
+  }
+
+  .bit-1,
+  .bit-2,
+  .bit-3,
+  .bit-5,
+  .bit-7,
+  .bit-9,
+  .bit-11 {
+    width: 100%
+  }
+}
+
+/* Landscape to small desktop */
+@media (min-width: 50em) and (max-width: 68.750em) {
+  .bit-2,
+  .bit-7 {
+    width: 100%
+  }
+
+  .bit-4,
+  .bit-8,
+  .bit-10,
+  .bit-12 {
+    width: 50%
+  }
+}

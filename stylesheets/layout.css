@@ -1,0 +1,35 @@
+body {
+   line-height: 1.4;
+   color: #333;
+   padding: 0 20px;
+}
+
+.frame {
+   max-width: 1280px;
+   margin: auto;
+}
+
+.menu li {
+   display: inline;
+   margin-right: 10px;
+}
+
+.item {
+   padding: 20px;
+}
+
+.item img {
+   display: block;
+   width: 100%;
+   height: auto;
+   margin-bottom: 10px;
+}
+
+article .content {
+   width: 50%;
+}
+
+.gallery .item {
+   width: 25%;
+   float: left;
+}
