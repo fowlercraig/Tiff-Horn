@@ -8,8 +8,8 @@
 
 } ?>
 
-<div id="content">
-
+<div id="content" class="index">
+<div id="zoom-container">
 <section class="gallery frame index">
 <?php $paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1; // setup pagination
 
@@ -31,6 +31,6 @@ $the_query = new WP_Query( array(
 <?php endwhile; wp_reset_postdata(); // Rest Data ?>
 
 </section>
-
+</div><!-- Zoom Container -->
 </div><!-- Content-->
 <?php get_footer(); ?>
