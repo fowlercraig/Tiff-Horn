@@ -67,7 +67,7 @@ $settings = array(
 'montserat' 	 => array('//fonts.googleapis.com/css?family=Montserrat:400,700'),
 'onepage' 	   => array('/wp-content/themes/gridded/stylesheets/onepage-scroll.css'),
 'scrollsec' 	 => array('/wp-content/themes/gridded/stylesheets/jquery.scrollSections.css'),
-'gizmo' 	     => array('/wp-content/themes/gridded/stylesheets/jquery.scrollSections.css'),
+'gizmo' 	     => array('/wp-content/themes/gridded/fonts/ss-gizmo.css'),
 ),
 
 'default_stylesheets' => array(
@@ -76,6 +76,7 @@ $settings = array(
 'magnific',
 'sacker',
 'onepage',
+'gizmo',
 'layout'
 ),
 

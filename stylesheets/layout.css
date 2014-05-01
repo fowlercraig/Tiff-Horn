@@ -1,5 +1,6 @@
 /* @override 
-	http://tiffhorn.com.s147445.gridserver.com/wp-content/themes/gridded/stylesheets/layout.css */
+	http://tiffhorn.com.s147445.gridserver.com/wp-content/themes/gridded/stylesheets/layout.css
+	http://localhost:8888/tiffhorn/wp-content/themes/gridded/stylesheets/layout.css */
 
 body {
    line-height: 1.4;
@@ -128,11 +129,12 @@ body.page-template-page-project-php {
 }
 
 .item img {
-   display: block;
-   max-width: 100%;.item.boom {
+  display: block;
+  max-width: 100%;
   padding: 0;
-  top: ;
 }
+
+.item.boom {
    height: auto;
    margin-bottom: 10px;
 }
@@ -178,7 +180,7 @@ article .content {
   top: 0;
   margin-top: 10px;
   padding: 20px 20px;
-  z-index: 1;
+  z-index: 9;
 }
 
 #header .logo {
@@ -520,11 +522,28 @@ article .content {
   margin: auto;
   max-height: 100%;
   max-width: 100%;
+  min-height: 100%;
 }
 
 .project.list  .index img {
    margin-bottom: 10px;
    height: auto;
+}
+
+.onepage-pagination {
+  position: fixed;
+}
+
+#header-bg {
+  position: fixed;
+  height: 180px;
+  width: 100%;
+  background: red;
+  top: 0;
+  left: 0;
+  background: url(../images/header-bg.png) repeat-x top;
+  background-size: 100% 100%;
+  pointer-events: none;
 }
 
 #scrollsections-navigation {
@@ -554,7 +573,6 @@ article .content {
 
 #buttons {
   position: fixed;
-  z-index
 }
 
 #slides-control {
@@ -594,6 +612,47 @@ article .content {
 
 #slides-control img:hover {
   opacity: 1;
+}
+
+.gallery-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 999;
+  padding: 0;
+}
+
+.gallery-modal .close {
+  position: absolute;
+  line-height: 1;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  z-index: 99;
+  font-size: 28px;
+  color: #fff;
+}
+
+.gallery-modal img {
+  display: block;
+  box-shadow: 0!important;
+}
+
+.gallery-modal > div > div {
+  border: none!important;
+}
+
+#content-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 4;
 }
 
 .isotope,

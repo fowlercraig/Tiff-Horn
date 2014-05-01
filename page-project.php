@@ -2,7 +2,7 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 
-<section id="content" role="main">
+<section id="content" class="project" role="main">
 <article id="post-<?php the_ID(); ?>" <?php post_class('frame project'); ?>>
 <header>
 <h1 class="project-title"><?php the_title(); ?></h1>

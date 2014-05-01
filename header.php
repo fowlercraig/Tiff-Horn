@@ -28,7 +28,7 @@
 <body <?php body_class(); ?>>
 
 <header id="header" class="frame">
-   <h1 class="logo"><a rel="tab" data-url="/"><?php bloginfo( 'name' ) ?></a></h1>
+   <h1 class="logo"><a href="<?php bloginfo('url'); ?>"><?php bloginfo( 'name' ) ?></a></h1>
    <nav>
      <a id="btnInfo" rel="tab" data-url="/info">Info</a>
      <a href="#" id="btnJournal">Journal</a>

@@ -5,7 +5,7 @@
   </div>
 </nav>
 
-<?php $images = get_field('project_gallery'); if( $images ): ?>
+<?php $galleryimages = get_field('project_gallery'); if( $galleryimages ): ?>
 <div class="gallery list project">
 
 <?php if (has_post_thumbnail( $post->ID ) ): ?>
@@ -21,11 +21,11 @@
 </section>
 <?php endif; ?>
 
-<?php foreach( $images as $image_med ): ?>
+<?php foreach( $galleryimages as $image ): ?>
 <section class="gallery-item">
 <figure class="item">
-<a href="<?php echo $image_big[0]; ?>" class="pop">
-<img src="<?php echo $image_med[0]; ?>" alt="<?php bloginfo('name'); ?> | <?php the_title(); ?>" />
+<a href="<?php echo $image['sizes']['large']; ?>" class="pop">
+<img src="<?php echo $image['sizes']['large']; ?>" alt="<?php bloginfo('name'); ?> | <?php the_title(); ?>" />
 </a>
 </figure>
 </section>
