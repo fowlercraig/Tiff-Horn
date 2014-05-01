@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'ApercuRegular';
+    src: url('apercu_regular.eot');
+    src: url('apercu_regular.eot') format('embedded-opentype'),
+         url('apercu_regular.woff') format('woff'),
+         url('apercu_regular.ttf') format('truetype'),
+         url('apercu_regular.svg#ApercuRegular') format('svg');
+}

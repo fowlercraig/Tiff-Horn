@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php Themewrangler::setup_page();get_header(); ?>
 <section id="content" role="main">
 <article id="post-0" class="post not-found">
 <header class="header">

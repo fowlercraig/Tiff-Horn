@@ -1,3 +1,6 @@
+/* @override 
+	http://tiffhorn.com.s147445.gridserver.com/wp-content/themes/gridded/stylesheets/onepage-scroll.css */
+
 body, html {
   margin: 0;
   -webkit-transition: opacity 400ms;
@@ -29,7 +32,7 @@ body, .onepage-wrapper, html {
 
 .onepage-pagination {
   position: absolute;
-  right: 10px;
+  right: 70px;
   top: 50%;
   z-index: 5;
   list-style: none;
@@ -42,8 +45,8 @@ body, .onepage-wrapper, html {
 }
 .onepage-pagination li a{
   padding: 10px;
-  width: 4px;
-  height: 4px;
+  width: 2px;
+  height: 6px;
   display: block;
   
 }
@@ -52,19 +55,15 @@ body, .onepage-wrapper, html {
   position: absolute;
   width: 4px;
   height: 4px;
-  background: rgba(0,0,0,0.85);
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
+  margin-left: 4px;
+  background: rgba(0,0,0,0.35);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius:  50%;
 }
 
 .onepage-pagination li a.active:before{
-  width: 10px;
-  height: 10px;
-  background: none;
-  border: 1px solid black;
-  margin-top: -4px;
-  left: 8px;
+  background: #222;
 }
 
 .disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {

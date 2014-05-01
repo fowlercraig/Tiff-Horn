@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Maison';
+    src: url('maisonneue-demi-trial.eot');
+    src: url('maisonneue-demi-trial.eot') format('embedded-opentype'),
+         url('maisonneue-demi-trial.woff') format('woff'),
+         url('maisonneue-demi-trial.ttf') format('truetype'),
+         url('maisonneue-demi-trial.svg#MaisonNeueTRIALDemi') format('svg');
+}
+
+@font-face {
+    font-family: 'Apercu Bold';
+    src: url('apercu_bolds.eot');
+    src: url('apercu_bolds.eot') format('embedded-opentype'),
+         url('apercu_bolds.woff') format('woff'),
+         url('apercu_bolds.ttf') format('truetype'),
+         url('apercu_bolds.svg#ApercuBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('apercu_regular.eot');
+    src: url('apercu_regular.eot') format('embedded-opentype'),
+         url('apercu_regular.woff') format('woff'),
+         url('apercu_regular.ttf') format('truetype'),
+         url('apercu_regular.svg#ApercuRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

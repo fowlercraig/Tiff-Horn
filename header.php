@@ -5,12 +5,7 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
 
-<!-- Website
----- Designed
----- By
----- WeAreGiants.
----- wearegiants.com
--->
+<!-- Website designed by WeAreGiants | wearegiants.com -->
 
 <meta charset="utf-8">
 <title><?php wp_title(' | ', true, 'right'); ?></title>
@@ -28,12 +23,16 @@
 
 <?php wp_head(); ?>
 
+</head>
+
+<body <?php body_class(); ?>>
+
 <header id="header" class="frame">
-<nav class="bit-1 item center">
-   <h1 class="bit-4"><a href="<?php bloginfo( 'wpurl' ) ?>"><?php bloginfo( 'name' ) ?></a></h1>
-   <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container_class' => 'menu bit-75',)); ?>
-   
-</nav>
+   <h1 class="logo"><a rel="tab" data-url="/"><?php bloginfo( 'name' ) ?></a></h1>
+   <nav>
+     <a id="btnInfo" rel="tab" data-url="/info">Info</a>
+     <a href="#" id="btnJournal">Journal</a>
+   </nav>
 </header>
 
 <div id="wrapper-outter">

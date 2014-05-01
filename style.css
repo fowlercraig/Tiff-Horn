@@ -25,21 +25,12 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 *,
 *:after,
 *:before {
+  -webkit-font-smoothing: antialiased;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box
-}
-
-.box {
-  text-align: center;
-  font-family: "futura-pt",sans-serif;
-  background:#fff;
-  color: #ccc;
-  font-size:11px;
-  padding: 10px 0 10px 0;
-  border-radius:4px;
 }
 
 /* Set the width of the grid */
@@ -52,11 +43,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 [class*='bit-'] {
   float: left;
   padding: 0.3em
-}
-
-/* Floats last ".bit-" to the right */
-[class*='bit-']:last-of-type {
-  float: left
 }
 
 /* Clearfix */
@@ -79,6 +65,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 .bit-10 { width: 10% }
 .bit-11 { width: 9.09090909091% }
 .bit-12 { width: 8.33% }
+.bit-66 { width: 66.666%;}
 
 /* Landscape mobile & down */
 @media (max-width: 30em) {
